@@ -1,2 +1,5 @@
 # drawio-diagram-styles
-Style templates for Draw.io
+
+Diagram style templates for your [Draw.io](draw.io) diagrams.
+
+![screenshot](cover.png)

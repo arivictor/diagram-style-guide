@@ -27,9 +27,11 @@ Technical diagrams should be simple. The simpler they are to understand without 
 
 ## Shapes
 
-Use basic shapes. Squares are straightforward and suitable for text. To differentiate services or logic, mix in other shapes. 
+Differentiate service types by using basic shapes. Squares are straightforward and suitable for text.
 
-For creativity, try cubes for servers and cylinders for databases. Keep it simple.
+![shapes](./assets/shapes.png)
+
+The shapes you decide to use is not important. However, **remaining consistent is**. For example, if squares are used for databases then thorughout the diagram all databases should be represented by squares.
 
 ## Arrows and Lines
 ### Directionality
@@ -38,19 +40,39 @@ Arrows and lines clarify data direction, request flow, or system connections. Co
 
 1. **Data Flow**: Arrow points where data goes. Example: From API to client.
 
+![data flow](./assets/dataflow.png)
+
 2. **Action Flow**: Arrow shows action direction. Example: From client to API for data retrieval.
 
+![action flow](./assets/actionflow.png)
+
 3. **System Connection**: Simple lines indicate interconnected systems without specifying direction. For example, a line connects the client and API but not the database if there's no direct communication.
+
+![system connection](./assets/systemconnection.png)
 
 ### Line Style
 
 - **Main Logic/Flow**: Use solid lines for primary connections (Client → API → Database).
 
+![solid lines](./assets/solidlines.png)
+
 - **Intermediate Logic/Flow**: Dashed lines for secondary details, like authentication steps.
 
-> 
-> Avoid multiple sharp turns in a single line; aim for straightforward paths.
-> 
+![dashed lines](./assets/dashedlines.png)
+
+### Line Angles
+
+- Avoid unnecessary multiple sharp angles in a single line. 
+
+![multipleangles](./assets/multipleangles.png)
+
+- Aim for straightforward paths where possible.
+
+![straight lines](./assets/straightlines.png)
+
+- Where lines must intersect, keep the lines as distinct as possible.
+
+![intersections](./assets/intersections.png)
 
 ### Arrow Heads
 
@@ -58,17 +80,26 @@ Arrows and lines clarify data direction, request flow, or system connections. Co
 
 - **Relationships/Notes**: Empty or basic arrowheads for connections, secondary logic, or annotations.
 
-The rule isn't about your chosen style but about applying it consistently across your diagrams.
+- **Combine** line styles and arrow head styles for different information types
+
+![arrow line combination](./assets/arrowlinecombo.png)
 
 ## Colour
 
-You can keep diagrams simple with black, white, and grey for the main components. Use colour sparingly to emphasise key points. Remember, colours often carry subconscious meanings—red might suggest caution, an exception, or a change. Choose wisely to ensure clarity and avoid unintended interpretations; If in doubt, leave it out.
+You can keep diagrams simple with black, white, and grey for the main components. 
+
+Use colour sparingly to emphasise key points. Remember, colours often carry subconscious meanings—red might suggest caution, an exception, or a change.
+
+![colour information](./assets/colourinfo.png)
+
+Choose wisely to ensure clarity and avoid unintended interpretations; If in doubt, leave it out.
+
+![colour meaning](./assets/colourmeaning.png)
 
 ## Typography
 
 Typography in technical diagrams conveys information and affects readability and comprehension. 
 
-Here's how to approach it:
 ### Font Choices
 
 - **Readability**: Select fonts that are easy to read. Sans-serif fonts like Arial, Helvetica, or Calibri are generally preferred for clarity, especially in digital formats.
@@ -89,7 +120,13 @@ Here's how to approach it:
 
 - **Abbreviations**: If abbreviations are necessary, use them sparingly and consider including a legend or glossary if your diagram contains many. Ensure abbreviations are commonly understood or explained within the context.
 
-- **Special Characters**: Use special characters (like arrows or symbols) consistently. Define what each symbol means if they're not universally recognised.
+The below example demonstrates an inconsistent styling of labels and lack of convention.
+
+![bad labelling](./assets/labellingbad.png)
+
+What ever convention you decide on, stick to it. Below demonstrates how consistency ensures clarity.
+
+![good labelling](./assets/labellinggood.png)
 
 ## Creativity and Aesthetics
 
@@ -100,13 +137,15 @@ Minimalism is Key:
 - **Complexity Clutters**: Complex shapes, intricate patterns, and vibrant colours can distract and confuse. Stick to basic shapes and a limited colour palette. This ensures your diagrams remain focused on their primary purpose: efficiently conveying technical information.
 
 - **Function Over Form**: Every element in your diagram should serve a purpose. If a creative detail doesn’t add to the Understanding of the diagram, it’s probably best left out. This isn’t to say your diagrams should be dull, but aesthetics should never overshadow functionality.
-#### Why Less is More
 
 - **Enhances Understanding**: A more straightforward diagram can be understood quickly and by a wider audience. It strips away the non-essential, allowing viewers to focus on the core information.
 
 - **Facilitates Accessibility**: Limiting your use of colours and complex visuals makes your diagrams more accessible to individuals with visual impairments or colour blindness. This inclusivity broadens the reach and utility of your diagrams.
 
-- **Compatibility**: Your diagram choices could impact your diagrams compatibility with other documentation. Your diagram might be needed in other peoples documentation.
+- **Compatibility**: Your diagram style choices could impact your diagrams compatibility with other documentation. Your diagram might be needed in other peoples documentation so it is thereore important to consider what style is appropriate.
+
+> **Style Examples**
+> Check out the [style pack](diagram-styles.drawio) for [draw.io](draw.io) for some inspiration.
 
 #### How to Achieve Simplicity
 

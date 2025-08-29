@@ -90,45 +90,45 @@ Use different arrowhead styles to convey different types of relationships:
 
 ## Colour
 
-You can keep diagrams simple with black, white, and grey for the main components. 
+Maintain simplicity by using a minimal colour palette—black, white, and grey form an effective foundation for most technical diagrams.
 
-Use colour sparingly to emphasise key points. Remember, colours often carry subconscious meanings—red might suggest caution, an exception, or a change.
+Use colour strategically to highlight critical information or indicate status. Be mindful that colours carry subconscious associations—red often suggests warnings or errors, green implies success or go-ahead, while yellow indicates caution.
 
 ![colour information](./assets/colourinfo.png)
 
-Choose wisely to ensure clarity and avoid unintended interpretations; If in doubt, leave it out.
+Choose colours purposefully to enhance understanding rather than decoration. When in doubt about a colour choice, consider whether the diagram communicates effectively without it.
 
 ![colour meaning](./assets/colourmeaning.png)
 
 ## Typography
 
-Typography in technical diagrams conveys information and affects readability and comprehension. 
+Typography directly impacts how effectively your diagrams communicate information. Clear, consistent text choices enhance readability and professional appearance.
 
 ### Font Choices
 
-- **Readability**: Select fonts that are easy to read. Sans-serif fonts like Arial, Helvetica, or Calibri are generally preferred for clarity, especially in digital formats.
+- **Readability**: Choose fonts that remain clear at various sizes and display conditions. Sans-serif fonts like Arial, Helvetica, or Calibri are recommended for their clarity in digital formats.
 
-- **Consistency**: Use the same font family throughout your diagrams to maintain consistency.
+- **Consistency**: Use a single font family throughout your diagrams to maintain visual cohesion and professional appearance.
 
-- **Availability**: Choose fonts widely available across different platforms and software to ensure your diagrams look the same everywhere.
+- **Availability**: Select fonts that are widely available across platforms and software to ensure consistent rendering regardless of where your diagrams are viewed.
 
 ### Text Size
 
-- **Hierarchy**: Establish a clear hierarchy with your text sizes. Titles should be the largest, followed by subtitles (if any), captions, and body text. This helps guide the viewer's attention to the most critical parts of your diagram.
+- **Visual Hierarchy**: Establish clear size relationships between different text elements. Titles should be largest, followed by section headers, labels, and body text. This hierarchy guides viewers through the information logically.
 
-- **Legibility**: Ensure text is large enough to be easily legible on the intended display or print size. As a starting point, body text should be no smaller than 10 points for print and 12-14 points for screen displays.
+- **Legibility**: Ensure text remains readable at your target viewing size. For digital displays, use minimum 12-14 point text; for print, 10 points is generally acceptable.
 
 ### Labeling Conventions
 
-- **Capitalisation**: Use capitalisation consistently. Decide if you will use sentence case, title case, or all caps for different types of text and stick to it throughout your diagrams.
+- **Capitalization**: Maintain consistent capitalization rules throughout your diagrams. Choose between sentence case, title case, or uppercase for specific element types and apply consistently.
 
-- **Abbreviations**: If abbreviations are necessary, use them sparingly and consider including a legend or glossary if your diagram contains many. Ensure abbreviations are commonly understood or explained within the context.
+- **Abbreviations**: Use abbreviations sparingly and only when space is limited. Ensure abbreviations are widely understood or provide a legend for clarity.
 
-The below example demonstrates an inconsistent styling of labels and lack of convention.
+The following example demonstrates inconsistent labeling that can confuse viewers:
 
 ![bad labelling](./assets/labellingbad.png)
 
-What ever convention you decide on, stick to it. Below demonstrates how consistency ensures clarity.
+Consistent conventions improve clarity and professionalism:
 
 ![good labelling](./assets/labellinggood.png)
 
@@ -164,56 +164,56 @@ Minimalism is Key:
 ## Conventions and Best Practices
 ### Additional Tips
 
-- **Contrast**: Ensure high contrast between text and background to improve readability. Dark text on a light background or light text on a dark background are both practical.
+- **Contrast**: Maintain high contrast between text and background elements to ensure readability across different viewing conditions. Use dark text on light backgrounds or light text on dark backgrounds for optimal legibility.
 
-- **Spacing**: Pay attention to spacing around text. Avoid clutter by ensuring there is enough space around labels to make them easily distinguishable from each other.
+- **Spacing**: Provide adequate whitespace around text elements and diagram components. Proper spacing prevents visual clutter and helps viewers distinguish between different elements quickly.
 
-- **Alignment**: Text alignment (left, centre, right) should be consistent across similar elements. Align text to shapes or lines to enhance the flow and readability of information.
+- **Alignment**: Apply consistent text alignment rules throughout your diagrams. Align text to shapes, lines, or grid systems to create visual order and improve information flow.
 
 ### Naming Conventions
 
-- **Files**: Adopt a transparent, descriptive naming system that reflects the diagram's purpose, version, and possibly the date of creation or modification (e.g., `NetworkArchitecture_V2.1_20240328`). This helps organize and locate files efficiently.
+- **Files**: Use descriptive, systematic naming that includes the diagram's purpose, version, and creation/modification date (e.g., `NetworkArchitecture_V2.1_20240328`). This approach facilitates organization and efficient file retrieval.
 
-- **Diagram Elements**: Names should be concise yet descriptive enough to convey the element's function or role without ambiguity. For instance, a server might be labelled `AuthServer_EU` to indicate its purpose and location.
+- **Diagram Elements**: Choose concise yet descriptive labels that clearly convey each element's function and context. For example, label a server as `AuthServer_EU` to indicate both its purpose (authentication) and location (Europe).
 
 ### Versioning of Diagrams
 
-- **Sequential Versioning**: Use a version number to track revisions (e.g., 1.0, 1.1, 2.0). Increment the major number for significant changes and the minor for minor updates. This makes it easier to track changes over time and understand the evolution of a diagram.
+- **Sequential Versioning**: Implement version numbers to track revisions (e.g., 1.0, 1.1, 2.0). Use major numbers for significant changes and minor numbers for incremental updates. This system makes it easy to track evolution and understand the scope of changes.
 
 > [!example] Example
 >network-diagram-v1.0.5
 
-- **Date-based Versioning**: Beneficial for frequently updated diagrams, incorporating the date (e.g., `2024-03-28`) can provide quick insight into the diagram's currency.
+- **Date-based Versioning**: For frequently updated diagrams, incorporate dates (e.g., `2024-03-28`) to provide immediate insight into the diagram's currency and relevance.
 
 > [!example] Example
 >network-diagram-20240328-1
 >network-diagram-v1.0.5-20240328
 
-- **Change Log**: You might want to maintain a change log within the diagram file or as an accompanying document to record the nature of each update, the date, and the author. This is invaluable for collaborative projects.
+- **Change Log**: Maintain a change log within the diagram file or as a separate document to track updates, dates, and authors. This practice is essential for collaborative projects and long-term maintenance.
 
 **Example**
 
 | Name | Comment | Date | Version |
 | ---------- | --------- | --------- | --------- | 
-| Max | Added thing | 01/01/2024 | 1.2.0 | 
-| Marie | Removed stuff | 16/11/2023 | 1.1.0|
+| Max | Added authentication flow | 01/01/2024 | 1.2.0 | 
+| Marie | Removed deprecated services | 16/11/2023 | 1.1.0|
 
-### Reducing complexity
+### Reducing Complexity
 
-- **Modularity**: Break down complex diagrams into smaller, focused modules that can be understood independently. Link related diagrams or modules with references or hyperlinks where possible.
+- **Modularity**: Divide complex systems into smaller, focused diagrams that can stand alone. Connect related diagrams through references or hyperlinks to maintain overall system context.
 
-- **Layering**: Use layers to group diagram elements that belong to different aspects of the system (e.g., infrastructure, application, data flow). This allows viewers to focus on one layer at a time, reducing cognitive load.
+- **Layering**: Organize diagram elements into logical layers (infrastructure, application, data flow). This approach allows viewers to focus on specific aspects while reducing cognitive overhead.
 
-- **Hide or Simplify Details**: Not every viewer needs to see every detail. Consider audience-specific versions of diagrams where less relevant details are omitted or simplified.
+- **Audience-Specific Views**: Create different versions of diagrams tailored to specific audiences, omitting or simplifying details that aren't relevant to each viewer group.
 
 ### Improving Legibility
 
-- **Spacing and Alignment**: Ensure enough space between elements to avoid clutter. Align similar elements to create visual order and improve readability.
+- **Spacing and Alignment**: Provide adequate spacing between elements and align similar components to create visual hierarchy and reduce clutter.
 
-- **Highlight Key Elements**: Use colour, shading, or other visual means to draw attention to critical parts of the diagram, such as the primary data flow or components with special significance.
+- **Highlight Critical Elements**: Use colour, shading, or size variations strategically to draw attention to key components, primary data flows, or decision points.
 
-- **Consistent Scale and Orientation**: Maintain consistent scale across similar elements and a uniform orientation for the diagram to help viewers quickly grasp the layout and relationships.
+- **Consistent Scale and Orientation**: Maintain uniform sizing for similar elements and consistent diagram orientation to help viewers quickly understand spatial relationships.
 
-- **Annotation and Legends**: Use annotations sparingly but effectively to clarify complex points. A legend can decode the diagram's symbols, colours, and line styles, aiding comprehension.
+- **Strategic Annotation**: Use annotations judiciously to clarify complex concepts. Include legends to explain symbols, colours, and line styles when necessary for comprehension.
 
 

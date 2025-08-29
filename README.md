@@ -1,7 +1,7 @@
 # Diagram Style Guide
 ![GitHub Release](https://img.shields.io/github/v/release/arivictor/drawio-diagram-styles?style=for-the-badge)
 
-An opinionated diagram style guide.
+An opinionated guide for creating clear, consistent, and effective technical diagrams.
 
 ![screenshot](cover.png)
 
@@ -149,7 +149,7 @@ Minimalism is Key:
 - **Compatibility**: Your diagram style choices could impact your diagrams' compatibility with other documentation. Your diagram might be needed in other people's documentation, so it is therefore important to consider what style is appropriate.
 
 > **Style Examples**
-> Check out the [style pack](diagram-styles.drawio) for [draw.io](draw.io) for some inspiration.
+> Check out the [style pack](diagram-styles.drawio) for [draw.io](https://draw.io) for some inspiration.
 
 #### How to Achieve Simplicity
 

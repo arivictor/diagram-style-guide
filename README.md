@@ -7,80 +7,84 @@ An opinionated diagram style guide.
 
 ## Introduction
 
-This guide will help you create *clear, straightforward, and consistent technical diagrams*. It's for anyone who needs to turn complex ideas into simple visuals—product managers, developers, project managers, and more.
+This guide provides practical principles and techniques for creating *clear, consistent, and effective technical diagrams*. Whether you're a product manager, developer, project manager, or technical professional, these guidelines will help you transform complex ideas into accessible visual communications.
 
-I'm Ari, a professional with a background in cybersecurity, cloud consulting, and systems reliability engineering. I've honed my skills in explaining technical concepts to diverse audiences, and I've found that while text can often fall short, diagrams excel at quickly conveying complex ideas.
+Technical diagrams excel where text often falls short—they quickly convey complex relationships, system architectures, and process flows. The principles outlined here are actionable tools you can immediately apply to improve the clarity and impact of your technical communications.
 
-What I'm sharing in this guide are not abstract rules but practical tools that you can immediately apply to make complex information easy to understand. Throughout this guide I will be making use of [draw.io](draw.io), but the concepts shown can be implemented in any tool you wish to use. 
-
-Now that we've set the stage let's dive into the practical tools and principles that will help you create clear, straightforward, and consistent technical diagrams. 
+While examples throughout this guide use [draw.io](https://draw.io), these concepts can be implemented in any diagramming tool you prefer. The focus is on universal principles that transcend specific software platforms. 
 
 ## General Principles
 
-Technical diagrams should be simple. The simpler they are to understand without much background, the better. They're about showing technical ideas in a clear, accessible way. These guidelines are straightforward, giving you confidence in your diagram creation.
+Effective technical diagrams prioritize clarity and understanding above all else. The goal is to communicate complex technical concepts in the simplest way possible, making them accessible to diverse audiences regardless of their technical background.
 
-- **Consistency**: Stick to the same styles and rules in all your diagrams.
+- **Consistency**: Maintain uniform styles, symbols, and conventions across all diagrams within a project or organization. This creates a cohesive visual language that readers can quickly learn and apply.
 
-- **Clarity**: Aim for the most straightforward possible explanations.
+- **Clarity**: Choose the simplest representation that accurately conveys your message. Every element should have a clear purpose and contribute to overall understanding.
 
-- **Relevance**: Include only the information that matters. Keep diagrams neat and to the point.
+- **Relevance**: Include only essential information that directly supports your communication goal. Remove or minimize elements that don't add value to the viewer's understanding.
 
 ## Shapes
 
-Differentiate service types by using basic shapes. Squares are straightforward and suitable for text.
+Use distinct shapes to differentiate between types of components or services in your diagrams. Simple geometric shapes work best as they're universally recognizable and easy to reproduce.
 
 ![shapes](./assets/shapes.png)
 
-The shapes you decide to use is not important. However, **remaining consistent is**. For example, if squares are used for databases then thorughout the diagram all databases should be represented by squares.
+The specific shapes you choose matter less than maintaining consistency. Establish a shape vocabulary for your project—for example, if rectangles represent databases, use rectangles for all database components throughout your diagrams. This consistency helps viewers quickly identify component types and understand system relationships.
 
 ## Arrows and Lines
 ### Directionality
 
-Arrows and lines clarify data direction, request flow, or system connections. Consistency is key—choose a style and stick with it:
+Arrows and lines communicate relationships, data flow, and system interactions. Choose a consistent approach and apply it throughout your diagrams:
 
-1. **Data Flow**: Arrow points where data goes. Example: From API to client.
+1. **Data Flow**: Arrows indicate the direction data moves through the system. Example: Data flows from API to client.
 
 ![data flow](./assets/dataflow.png)
 
-2. **Action Flow**: Arrow shows action direction. Example: From client to API for data retrieval.
+2. **Action Flow**: Arrows show the direction of actions or requests. Example: Client initiates a request to the API.
 
 ![action flow](./assets/actionflow.png)
 
-3. **System Connection**: Simple lines indicate interconnected systems without specifying direction. For example, a line connects the client and API but not the database if there's no direct communication.
+3. **System Connection**: Simple lines without arrows indicate relationships or connections between systems without implying direction. Use this when systems interact bidirectionally or when direction isn't the focus.
 
 ![system connection](./assets/systemconnection.png)
 
 ### Line Style
 
-- **Main Logic/Flow**: Use solid lines for primary connections (Client → API → Database).
+Use different line styles to create visual hierarchy and distinguish between primary and secondary information:
+
+- **Primary Flow**: Solid lines for main connections and critical paths (e.g., Client → API → Database).
 
 ![solid lines](./assets/solidlines.png)
 
-- **Intermediate Logic/Flow**: Dashed lines for secondary details, like authentication steps.
+- **Secondary Flow**: Dashed lines for supporting processes, optional connections, or auxiliary information (e.g., authentication flows, logging, monitoring).
 
 ![dashed lines](./assets/dashedlines.png)
 
 ### Line Angles
 
-- Avoid unnecessary multiple sharp angles in a single line. 
+Keep line paths simple and clean to maintain diagram readability:
+
+- Avoid unnecessary multiple sharp angles in a single line connection.
 
 ![multipleangles](./assets/multipleangles.png)
 
-- Aim for straightforward paths where possible.
+- Prefer direct, straightforward paths when connecting elements.
 
 ![straight lines](./assets/straightlines.png)
 
-- Where lines must intersect, keep the lines as distinct as possible.
+- When lines must intersect, maintain clear visual separation to prevent confusion.
 
 ![intersections](./assets/intersections.png)
 
 ### Arrow Heads
 
-- **General Flow**: Solid arrowheads for main actions or data flow.
+Use different arrowhead styles to convey different types of relationships:
 
-- **Relationships/Notes**: Empty or basic arrowheads for connections, secondary logic, or annotations.
+- **Primary Actions**: Solid arrowheads for main actions, data flow, or critical processes.
 
-- **Combine** line styles and arrow head styles for different information types
+- **Secondary Relationships**: Empty or outline arrowheads for supporting connections, notes, or optional flows.
+
+- **Combined Styles**: Combine line styles with arrowhead styles to create a comprehensive visual language for different information types.
 
 ![arrow line combination](./assets/arrowlinecombo.png)
 
@@ -142,7 +146,7 @@ Minimalism is Key:
 
 - **Facilitates Accessibility**: Limiting your use of colours and complex visuals makes your diagrams more accessible to individuals with visual impairments or colour blindness. This inclusivity broadens the reach and utility of your diagrams.
 
-- **Compatibility**: Your diagram style choices could impact your diagrams compatibility with other documentation. Your diagram might be needed in other peoples documentation so it is thereore important to consider what style is appropriate.
+- **Compatibility**: Your diagram style choices could impact your diagrams' compatibility with other documentation. Your diagram might be needed in other people's documentation, so it is therefore important to consider what style is appropriate.
 
 > **Style Examples**
 > Check out the [style pack](diagram-styles.drawio) for [draw.io](draw.io) for some inspiration.
